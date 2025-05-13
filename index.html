@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace de Videojuegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+<body class="bg-dark text-light">
+    <header class="container py-5">
+        <h1 class="mb-5 text-center">Marketplace de Videojuegos</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catálogo</a>
+            <a class="nav-link" href="#">Más vendidos</a>
+            <a class="nav-link" href="#">Mejor Valorados</a>
+            <a class="nav-link" onclick="mostrarSeccion('login')">Iniciar Sesión</a>
+            <a class="nav-link" onclick="mostrarSeccion('registro')">Registrarse</a>
+            <input type="text" id="busqueda" placeholder="Buscar juegos...">
+            <button class="btn btn-sm btn-outline-success" onclick="buscarJuego()">Buscar</button>
+            <button class="btn btn-sm btn-outline-secondary" onclick="verCarrito()">🛒 Carrito</button>
+        </nav>
+    </header>
+
+<section id="carrusel" class="bg-dark text-light">
+    <h2 class="mb-5 text-center">Noticias Principales</h2>
+    <div class="container py-5" class="noticias">
+        <p>!Lanzamiento exclusivo!</p>
+        <p>Descuentos por tiempo limitado</p>
+    </div>
+</section>
+
+<section id="catalogo">
+    <h3 class="container py-5">Top 10 Juegos Recientes</h3>
+    <div id="lista-juegos"></div>
+</section>
+
+<section id="login" style="display:none;">
+    <h2>Iniciar Sesión</h2>
+    <input type="email" id="loginEmail" placeholder="Correo"><br>
+    <input type="password" id="loginPass" placeholder="Contraseña"><br>
+    <button onclick="iniciarSesion()">Entrar</button>
+</section>
+
+<section id="registro" style="display:none;">
+    <h2>Registrarse</h2>
+    <input type="text" id="regNombre" placeholder="Nombre"><br>
+    <input type="email" id="regEmail" placeholder="Correo"><br>
+    <input type="password" id="regPass" placeholder="Contraseña"><br>
+    <button onclick="registrarse()">Crear cuenta</button>
+  </section>
+
+</body>
+</html>
