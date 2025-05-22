@@ -1,0 +1,37 @@
+.checkout-card {
+    border-radius: 10px;
+    padding: 2rem;
+    width: 800px;
+    gap: 5rem;
+}
+
+.left-panel {
+    flex: 1.5;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.left-panel img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.left-panel p {
+    font-size: 0.85rem;
+
+}
+
+.form-section {
+    flex: 2;
+}
+
+.row .col {
+    padding-right: 0.5rem;
+}
+
+#proceed-btn {
+    float: right;
+    margin-top: 1rem;
+}
